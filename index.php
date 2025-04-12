@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         echo "Login successful! Welcome, " . htmlspecialchars($user['username']) . " 🎉";
         // redirect or start session, etc.
     } else {
-        echo "Invalid username or password ❌";
+        echo "Invalid username or password  ❌";
     }
 }
 ?>

@@ -2,8 +2,8 @@
 require_once 'db.php';
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    $username == $_POST["username"];
-    $password == $_POST["password"];
+    $username = $_POST["username"];
+    $password = $_POST["password"];
 
     //store password
     $stmt = $pdo->prepare("INSERT INTO users(username, password) VALUES(?, ?)");
